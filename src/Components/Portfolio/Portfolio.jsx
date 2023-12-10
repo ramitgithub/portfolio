@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import './Portfolio.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import Sidebar from '../../img/sidebar.png'
-import Ecommerce from '../../img/ecommerce.png'
-import Hoc from '../../img/hoc.png'
-import Musicapp from '../../img/musicapp.png'
+import ECOM from '../../img/ECOM.jpg' 
+import EcomKart from '../../img/EcomKart.jpg' 
+import ViewWeather from '../../img/ViewWeather.jpg' 
+import FoodRestaurent from '../../img/FoodRestaurent.jpg' 
 import 'swiper/css'
 import { themeContext } from '../../Context'
 
@@ -27,16 +27,24 @@ function Portfolio() {
         className='portfolio-slider'
       >
         <SwiperSlide>
-            <img src={Sidebar} alt=""/>
+          <a href="https://soft-crostata-957ed3.netlify.app">
+            <img src={EcomKart} alt=""/>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={Ecommerce} alt=""/>
+          <a href="https://resilient-starlight-eedec9.netlify.app">
+            <img src={FoodRestaurent} alt=""/>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={Musicapp} alt=""/>
+          <a href="https://warm-arithmetic-669e1a.netlify.app">
+            <img src={ViewWeather} alt=""/>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={Hoc} alt=""/>
+          <a href="https://singular-longma-45ca5a.netlify.app">
+            <img src={ECOM} alt=""/>
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
